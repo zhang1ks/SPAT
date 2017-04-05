@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/video_frame"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="#000">
+        <VideoView
+            android:id="@+id/myVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="0.26" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/play_button"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/videoplay"
+            android:visibility="visible"
+            app:backgroundTint="@color/colorButtonBackground" />
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/profileface"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        app:backgroundTint="@color/colorButtonBackground" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/like"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="180dp"
+        app:backgroundTint="@color/colorButtonBackground" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/dislike"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="120dp"
+        app:backgroundTint="@color/colorButtonBackground" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab5"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/comment"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="@color/colorButtonBackground" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_gravity="bottom|left"
+        android:background="@color/colorBlack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="5dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="PHIvsCHI"
+                android:textColor="@android:color/background_light"
+                >
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="Eagles"
+                android:textColor="@android:color/background_light"
+                android:id="@+id/button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="NFL"
+                android:textColor="@android:color/background_light"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="88dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Carson Wentz gets lit up again. Claim down young man and get out of bounds. Long career."
+                android:textSize="18sp"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
